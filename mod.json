@@ -1,0 +1,13 @@
+{
+  "geode": "5.10.1",
+  "gd": { "win": "2.2081", "android": "2.2081", "mac": "2.2081", "ios": "2.2081" },
+  "id": "yourname.frame-window",
+  "name": "Frame Window",
+  "version": "v0.1.0",
+  "developer": "yourname",
+  "description": "Records your clicks per attempt and shows the gap between clicks in frames. No limits, fully offline.",
+  "settings": {
+    "show-hud": { "type": "bool", "name": "Show HUD", "default": true },
+    "export-json": { "type": "bool", "name": "Export clicks on level exit", "default": true }
+  }
+}
