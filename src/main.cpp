@@ -37,7 +37,7 @@ class $modify(FWBaseGameLayer, GJBaseGameLayer) {
     void handleButton(bool down, int button, bool isPlayer1) {
         GJBaseGameLayer::handleButton(down, button, isPlayer1);
         // m_gameState.m_currentProgress = current physics step (verify in your bindings version)
-        g_clicks.push_back({ m_gameState.m_currentProgress, down, isPlayer1 });
+        g_clicks.push_back({ static_cast<int>(m_gameState.m_currentProgress), down, isPlayer1 });
 
         if (g_label && Mod::get()->getSettingValue<bool>("show-hud")) {
             int gap = 0, prevDown = -1;
